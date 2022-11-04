@@ -1,0 +1,98 @@
+$background-image: black;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+    
+.gridContainer {
+
+    display: grid; 
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "img1 img2" 
+    "img3 img4"
+    "img5 img6";
+  
+}}
+
+@media screen and (min-width: 768px){
+    .gridContainer {
+        display: grid; 
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "img1 img2 img3 img4"
+        "img1 img2 img3 img4"
+        "img1 img2 img3 img4";
+    }
+}
+
+/** ESTILOS NORMALES**/
+
+.header_size {
+    height: 20vh;
+}
+
+.ul_flex {
+    display: flex;
+    background-color: brown;
+}
+
+.li_items {
+    align-items: center;
+    width: 25%;
+    font-size: large;
+}
+
+.main_size {
+    height: 60vh;
+}
+
+.img_size-color{
+    background-color: $background-image;
+    grid-area:img1 ;
+}
+
+.img_size-color2{
+    background-color: $background-image;
+    grid-area:img2 ;
+}
+
+.img_size-color3{
+    background-color: $background-image;
+    grid-area: img3;
+}
+
+.img_size-color4{
+    background-color: $background-image;
+    grid-area: img4;
+}
+
+.img_size-color5{
+    background-color: $background-image;
+    grid-area: img5;
+}
+
+.img_size-color6{
+    background-color: $background-image;
+    grid-area: img6;
+}
+
+
+.footer_size {
+    height: 20vh;
+}
+
+/** EFECTOS **/
+
+.efecto{
+    background-image: linear-gradient(to left bottom, #8e4882, #d34e70, #f67343, #eaae00, #a8eb12);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #8e4882;
+}
